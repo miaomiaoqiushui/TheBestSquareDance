@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_my_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_two"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.liu.dance.person.MyInfoActivity">
+
+    <LinearLayout
+        android:id="@+id/my_info_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="image_edit_info"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:text="头像"
+            android:layout_weight="0.8"
+            android:textColor="@color/black2"
+            android:textSize="15dp"
+            android:id="@+id/textView" />
+
+        <com.liu.dance.view.MyInfoRoundImageView
+            android:id="@+id/main_roundImage_info"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.2"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_header_person1"/>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.125dp"
+        android:background="#ded9d9"/>
+
+    <!--<com.allen.library.SuperTextView-->
+        <!--android:id="@+id/myinfo_name_picture"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--stv:sCenterTopTextString=" "-->
+        <!--stv:sCenterViewGravity="left_center"-->
+        <!--stv:sLeftTopTextString="头像"-->
+        <!--stv:sUseRipple="true"-->
+        <!--stv:sLeftViewGravity="left_center"-->
+        <!--stv:sRightTvDrawableRight="@drawable/ic_header_person1"-->
+       <!--/>-->
+
+
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftTextString="昵称"
+        stv:sRightTextString="淼淼秋水"
+        stv:sUseRipple="true"
+        stv:sRightTextColor="@color/gray_btn"/>
+
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftTextString="手机号"
+        stv:sRightTextString="15927175720"
+        stv:sUseRipple="true"
+        stv:sRightTextColor="@color/gray_btn"/>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/myinfo_many"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sUseRipple="true"
+        stv:sLeftTextString="更多" />
+
+
+
+</LinearLayout>

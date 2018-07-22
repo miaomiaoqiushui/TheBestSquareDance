@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_two"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_shop_serach_end_back"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/ic_search_back"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:singleLine="true"
+            android:textColor="@color/black2"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="0.1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/shape_edit3"
+            android:hint="\tⓢ 试试搜：音响"
+            android:text="\tⓢ 音响"
+            android:textSize="14dp"
+            android:textColorHint="@color/black3"
+            android:id="@+id/editText" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_shop_voice3"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="165dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="智能音响"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+
+
+                    <RatingBar
+                        android:numStars="5"
+                        android:rating="4.5"
+                        android:layout_marginTop="10dp"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content">
+                    </RatingBar>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="简介：我店销售当前好用音响，全场一律八折出售"
+                        android:textSize="14dp"/>
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_shop_voice_01"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="165dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="好听道音响"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+
+
+                    <RatingBar
+                        android:numStars="5"
+                        android:rating="4.0"
+                        android:layout_marginTop="10dp"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content">
+                    </RatingBar>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="简介：音响大甩卖啦，全场一律六折出售"
+                        android:textSize="14dp"/>
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="165dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="爱舞蹈专卖"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+
+
+                    <RatingBar
+                        android:numStars="5"
+                        android:rating="3.5"
+                        android:layout_marginTop="10dp"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content">
+                    </RatingBar>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="简介：好看音响大清仓啦"
+                        android:textSize="14dp"/>
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_shop_voice4"
+                    android:id="@+id/imageView" />
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
+

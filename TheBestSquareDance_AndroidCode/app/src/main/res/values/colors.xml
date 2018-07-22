@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#41a5f6</color>
+
+    <color name="colorInactive">#747474</color>
+    <color name="colorActiveSmall">#FFFFFF</color>
+    <color name="colorInactiveSmall">#50FFFFFF</color>
+
+    <color name="white1">#ffffff</color>
+    <color name="white2">#efeded</color>
+    <color name="pink">#fa79a8</color>
+    <color name="black2">#242121</color>
+    <color name="black3">#726c6c</color>
+    <color name="main_bg_color1">#41a5f6</color>
+    <color name="main_bg_color2">#338ad1</color>
+    <color name="dialog_blue">#0083FF</color>
+
+    <color name="round_outside_color">#FFFEFF</color>
+    <color name="round_inside_color">#FFFEFF</color>
+    <color name="black_33">#333333</color>
+    <color name="half_transparent_black">#BB000000</color>
+
+    <color name="gray_btn">#9e9e9e</color>
+    <color name="red_btn">#fd5353</color>
+    <color name="gray">#20000000</color>\
+    <color name="gray_one">#20bebbbb</color>
+    <color name="gray_two">#20cecdcd</color>
+
+
+    <color name="color_tab_1">#455C65</color>
+    <color name="color_tab_2">#00886A</color>
+    <color name="color_tab_3">#8B6B62</color>
+    <color name="color_tab_4">#6C4A42</color>
+    <color name="color_tab_5">#F63D2B</color>
+
+    <color name="color_notification_back">#ffcd33</color>
+    <color name="color_notification_text">#3E4757</color>
+
+    <array name="tab_colors">
+        <item name="tab_1">#455C65</item>
+        <item name="tab_2">#00886A</item>
+        <item name="tab_3">#8B6B62</item>
+        <item name="tab_4">#6C4A42</item>
+        <item name="tab_5">#F63D2B</item>
+    </array>
+</resources>

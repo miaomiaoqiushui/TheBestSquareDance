@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray_two"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/shop_goods_image"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="@drawable/ic_shop_dance3"/>
+
+            <TextView
+                android:id="@+id/shop_goods_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:text="超值购"
+                android:textSize="20dp"
+                android:textColor="@color/black2"/>
+
+            <TextView
+                android:id="@+id/shop_goods_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="本店商品价值实惠，军师广场舞爱好者喜爱的物品，全场物品好用，有意购买的顾客请联系我店\n\n商品名称：秧歌服2018新款中老年现代舞广场舞套装民族舞蹈服装演出服成人女 红色 M（95-110斤）\n\n商品毛重：1.0kg"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="15dp"
+                android:background="#b9b9b9"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="你可能还想看"
+                android:textColor="@color/black2"
+                android:gravity="center"
+                android:textSize="16dp"/>
+
+
+            <com.mylhyl.crlayout.SwipeRefreshRecyclerView
+                android:id="@+id/shop_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="1200dp"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_add_shop_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        fab:menu_labels_style="@style/MenuLabelsStyle"
+        fab:menu_labels_showAnimation="@anim/jump_from_down"
+        fab:menu_labels_hideAnimation="@anim/jump_to_down"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_shadowColor="#444"
+        fab:menu_colorNormal="#41a5f6"
+        fab:menu_colorPressed="#338ad1"
+        fab:menu_colorRipple="#3F51B5">
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_get_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_shop_get"
+        android:onClick="goods_buy"
+        fab:fab_label="点击购买"
+        style="@style/MenuButtonsStyle" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_tel_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_shop_phone"
+            android:onClick="goods_contact"
+            fab:fab_label="联系商家"
+            style="@style/MenuButtonsStyle" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</FrameLayout>

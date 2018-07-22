@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_two"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:id="@+id/videoplayer_popular"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+      >
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:text="发布人:"
+
+            />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="舞动的心"
+            android:textColor="@color/colorPrimary"
+           />
+        <Button
+            android:id="@+id/button_video_share"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="70dp"
+
+            android:background="@drawable/ic_share3"/>
+        <Button
+            android:id="@+id/button_video_comment"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="26dp"
+            android:background="@drawable/ic_comment"/>
+
+        <!--<Button-->
+            <!--android:layout_width="24dp"-->
+            <!--android:layout_height="24dp"-->
+            <!--android:layout_marginLeft="26dp"-->
+
+            <!--android:background="@drawable/ic_great1"/>-->
+        <!---->
+        <com.like.LikeButton
+            app:icon_type="heart"
+            app:icon_size="25dp"
+            app:unlike_drawable="@drawable/ic_great1"
+            app:like_drawable="@drawable/ic_great_red"
+            android:id="@+id/button_video_heart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="26dp"/>
+
+        <com.like.LikeButton
+            app:icon_type="star"
+            app:icon_size="25dp"
+            app:unlike_drawable="@drawable/ic_unsave1"
+            app:like_drawable="@drawable/ic_save"
+            android:id="@+id/button_video_collection"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <!--<Button-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+
+            <!--android:background="@drawable/ic_unsave1"/>-->
+    </LinearLayout>
+
+
+</LinearLayout>

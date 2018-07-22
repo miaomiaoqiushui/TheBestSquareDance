@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+
+        <ImageButton
+            android:id="@+id/btn_video_back1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:elevation="8dp"
+
+            android:src="@drawable/ic_arrow_back_white_24px"
+            tools:ignore="ContentDescription"/>
+
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+            android:id="@+id/video_alone_popular"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </FrameLayout>
+
+
+
+    <!--刷新框架-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <!--核心评价内容-->
+        <ListView
+            android:id="@+id/am_lv_comments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:scrollbars="none">
+        </ListView>
+    </LinearLayout>
+    <!--&lt;!&ndash;横线&ndash;&gt;-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c9c7c7"/>
+
+    <LinearLayout
+        android:id="@+id/am_ll_info"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal"
+        >
+        <!-- 输入框 -->
+        <EditText
+            android:id="@+id/am_tv_zan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:background="@drawable/shape_edit1"
+            android:hint="  我来说一说..."
+
+            android:gravity="center_vertical"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:maxLines="6"
+            android:minHeight="40dp"/>
+        <!-- 留言按钮 -->
+        <Button
+            android:id="@+id/am_tv_comment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_send2"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/am_ll_liuyan"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone">
+
+        <!-- 输入框、留言按钮 -->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            >
+            <!-- 输入框 -->
+            <EditText
+                android:id="@+id/am_et_msg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_edit"
+                android:hint="  我来说一说..."
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine"
+                android:maxLength="100"
+                android:maxLines="6"
+                android:minHeight="40dp"
+                />
+            <!-- 留言按钮 -->
+            <Button
+                android:id="@+id/am_b_save"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shape_button"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

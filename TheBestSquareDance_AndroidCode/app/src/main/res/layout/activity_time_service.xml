@@ -1,0 +1,140 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/all_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/main_bg_color1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:id="@+id/btn_timeservice_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_come_back3"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="时间服务"
+            android:textSize="20sp"
+            android:textColor="@color/white1"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="请选择提醒时间"
+        android:textSize="20dp"
+        android:textColor="@color/black2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/gray"/>
+
+    <RelativeLayout
+        android:id="@+id/repeat_rl"
+        style="@style/item_style"
+        >
+
+        <TextView
+            android:id="@+id/tv_repeat"
+            style="@style/item_text_style"
+            android:layout_alignParentLeft="true"
+            android:text="重复"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/arrow_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/personal_item_arrow"/>
+
+        <TextView
+            android:id="@+id/tv_repeat_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/arrow_one"
+            android:textColor="@color/black_33"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+
+    <RelativeLayout
+        android:id="@+id/ring_rl"
+        style="@style/item_style"
+        >
+
+        <TextView
+            android:id="@+id/ring_tv"
+            style="@style/item_text_style"
+            android:layout_alignParentLeft="true"
+            android:text="铃声"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/arrow_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/personal_item_arrow"/>
+
+        <TextView
+            android:id="@+id/tv_ring_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/arrow_two"
+            android:textColor="@color/black_33"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+
+
+    <Button
+        android:id="@+id/set_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="60dp"
+        android:text="确定"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/exit_btn_blue"
+        />
+
+</LinearLayout>

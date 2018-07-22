@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_two"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ellipsize="marquee"
+        android:background="@color/main_bg_color1"
+        android:gravity="center_horizontal|center"
+        android:text="个人中心"
+        android:textColor="#ffffffff"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/text_myInfo"
+                stv:sDividerLineType="both"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                stv:sLeftIconRes="@drawable/head_default"
+                stv:sLeftTextString="帐号管理"
+                stv:sUseRipple="true"
+                stv:sRightIconRes="@drawable/ic_right" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/text_myFriend"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                stv:sLeftTextString="我的舞友"
+                stv:sUseRipple="true"
+                stv:sRightIconRes="@drawable/ic_right" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/text_myCollection"
+                android:layout_width="match_parent"
+                stv:sLeftTextString="我的收藏"
+                stv:sUseRipple="true"
+                stv:sRightIconRes="@drawable/ic_right"
+                android:layout_height="50dp" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/text_myUpload"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                stv:sDividerLineType="bottom"
+                stv:sLeftTextString="我的上传"
+                stv:sUseRipple="true"
+                stv:sRightIconRes="@drawable/ic_right" />
+
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/text_myDownload"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                stv:sDividerLineType="both"
+                stv:sLeftTextString="我的下载"
+                stv:sUseRipple="true"
+                stv:sRightIconRes="@drawable/ic_right" />
+
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/text_applyDance"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                stv:sDividerLineType="both"
+                stv:sLeftTextString="申请舞群"
+                stv:sUseRipple="true"
+                stv:sRightIconRes="@drawable/ic_right" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/text_timeService"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                stv:sDividerLineType="both"
+                stv:sLeftTextString="时间服务"
+                stv:sUseRipple="true"
+                stv:sRightIconRes="@drawable/ic_right" />
+
+            <com.allen.library.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_height="50dp"
+                stv:sLeftTextString="摇一摇"
+                stv:sUseRipple="true"
+                stv:sRightViewType="switchBtn"
+                stv:sSwitchIsChecked="false"
+                stv:sSwitchMinWidth="40dp"
+                stv:sThumbResource="@drawable/thumb"
+                stv:sTrackResource="@drawable/track" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/text_person_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                stv:sLeftTextString="隐藏标题"
+                stv:sUseRipple="true"
+                stv:sRightViewType="switchBtn"
+                stv:sSwitchIsChecked="false"
+                stv:sSwitchMinWidth="40dp"
+                stv:sThumbResource="@drawable/thumb"
+                stv:sTrackResource="@drawable/track" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/text_person_color"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                stv:sLeftTextString="滑动颜色"
+                stv:sUseRipple="true"
+                stv:sRightViewType="switchBtn"
+                stv:sSwitchIsChecked="false"
+                stv:sSwitchMinWidth="40dp"
+                stv:sThumbResource="@drawable/thumb"
+                stv:sTrackResource="@drawable/track" />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/text_person_big"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                stv:sLeftTextString="滑动特效"
+                stv:sUseRipple="true"
+                stv:sRightViewType="switchBtn"
+                stv:sSwitchIsChecked="false"
+                stv:sSwitchMinWidth="40dp"
+                stv:sThumbResource="@drawable/thumb"
+                stv:sTrackResource="@drawable/track" />
+
+            <Button
+                android:id="@+id/mine_exit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/exit_btn_new"
+                android:text="退出登录"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+            <com.allen.library.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+               />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

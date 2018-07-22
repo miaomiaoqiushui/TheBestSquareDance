@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="我的位置："
+            android:textColor="@color/black2"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/route_nav_text"
+            android:layout_width="280dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="黄冈市黄梅县孔垄镇天末墩"
+            android:textSize="18dp"
+            />
+
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#c9c7c7"/>-->
+
+
+    <LinearLayout
+        android:id="@+id/span_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="0.2px" >
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="选择舞群："
+            android:textColor="@color/black2"
+            android:textSize="18dp"/>
+
+        <RelativeLayout
+            android:id="@+id/span_relativelayout"
+            android:padding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp" >
+
+            <TextView
+                android:id="@+id/tv_value"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:background="#fff"
+                android:ellipsize="end"
+                android:gravity="left|center"
+                android:hint="请点击选择"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="#ff000000"
+                android:textSize="18sp" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/bt_dropdown"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#fff"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/arrow_down" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#c9c7c7"/>-->
+    <!---->
+
+    <Button
+        android:id="@+id/dance_route_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/exit_btn_blue"
+        android:onClick="click_navigation_baidu11"
+        android:text="开始导航"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="date">
+        <item>王阿</item>
+        <item>李三</item>
+        <item>陈五</item>
+        <item>小周</item>
+        <item>刘大</item>
+        <item>成五</item>
+        <item>王三</item>
+        <item>小张</item>
+        <item>张三</item>
+        <item>那英</item>
+        <item>李四</item>
+        <item>王五</item>
+        <item>李中</item>
+        <item>郑国</item>
+        <item>白水水</item>
+        <item>白英</item>
+        <item>陈龙</item>
+        <item>陈丽丽</item>
+        <item>郑善</item>
+        <item>高进</item>
+        <item>高雷</item>
+        <item>阮天</item>
+        <item>龚爱国</item>
+        <item>苏醒</item>
+        <item>苏舞</item>
+        <item>陶宝</item>
+        <item>沙亮</item>
+        <item>宋冬</item>
+        <item>宋伟</item>
+        <item>袁杰</item>
+        <item>戚小薇</item>
+        <item>齐大友</item>
+        <item>齐圣</item>
+        <item>品冠</item>
+        <item>吴克群</item>
+        <item>BOBO</item>
+        <item>Jobs</item>
+        <item>董笑笑</item>
+        <item>伍佰</item>
+        <item>#蔡琳琳</item>
+        <item>$王汉</item>
+        <item>Jack</item>
+        <item>~夏达</item>
+    </string-array>
+
+</resources>

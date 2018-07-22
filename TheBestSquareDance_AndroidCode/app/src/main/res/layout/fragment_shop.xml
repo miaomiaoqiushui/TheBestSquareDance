@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_two"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/main_bg_color1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shop_location"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.8"
+            android:text="武汉市"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:singleLine="true"
+            android:textColor="@color/white1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.998"
+            android:background="@drawable/ic_right_angle1"
+            />
+
+        <EditText
+            android:id="@+id/shop_search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="0.25"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/shape_edit2"
+            android:hint="\tⓢ 试试搜：音响"
+            android:textSize="14dp"
+            android:focusable="false"
+            android:textColorHint="@color/white2"
+           />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/convenientBanner"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                app:canLoop="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_shop_view1"
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="0.5"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="超值购"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/gray_btn"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="21dp"
+                        android:background="#c9c7c7"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="22dp"
+                        android:background="@drawable/ic_shop_dance3"/>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_shop_view2"
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="0.5"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="热门活动"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/gray_btn"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="21dp"
+                        android:background="#c9c7c7"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="22dp"
+                        android:background="@drawable/ic_shop_dance4"
+                        android:id="@+id/imageView2" />
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_shop_view3"
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="0.5"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="品牌街"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/gray_btn"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="21dp"
+                        android:background="#c9c7c7"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="22dp"
+                        android:background="@drawable/ic_shop_voice3"/>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_shop_view4"
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="0.5"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="特色市场"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/gray_btn"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="21dp"
+                        android:background="#c9c7c7"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="22dp"
+                        android:background="@drawable/ic_shop_voice4"/>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="猜你喜欢"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black2"
+                android:layout_margin="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_goods_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+
+                    android:layout_margin="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shop_dance_01"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="165dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="好未来"
+                            android:textStyle="bold"
+                            android:textSize="18dp"/>
+
+
+
+                        <RatingBar
+                            android:id="@+id/shop_ratingBar"
+                            android:numStars="5"
+                            android:rating="4.5"
+                            android:layout_marginTop="10dp"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content">
+                        </RatingBar>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="简介：我店销售当前热门广场舞服装，全场一律八折出售"
+                            android:textSize="14dp"/>
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_goods_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shop_voice_01"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="165dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="火之舞"
+                            android:textStyle="bold"
+                            android:textSize="18dp"/>
+
+
+
+                        <RatingBar
+                            android:id="@+id/shop_ratingBar1"
+                            android:numStars="5"
+                            android:rating="4.0"
+                            android:layout_marginTop="10dp"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content">
+                        </RatingBar>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="简介：音响大甩卖啦，全场一律六折出售"
+                            android:textSize="14dp"/>
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_goods_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="165dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="爱舞蹈"
+                            android:textStyle="bold"
+                            android:textSize="18dp"/>
+
+
+
+                        <RatingBar
+                            android:id="@+id/shop_ratingBar2"
+                            android:numStars="5"
+                            android:rating="3.5"
+                            android:layout_marginTop="10dp"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content">
+                        </RatingBar>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="简介：好看耐用舞鞋大清仓啦，买两双送一双"
+                            android:textSize="14dp"/>
+
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shop_shoe"
+                        android:id="@+id/imageView" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_goods_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shop_video"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="165dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="舞之初"
+                            android:textStyle="bold"
+                            android:textSize="18dp"/>
+
+
+
+                        <RatingBar
+                            android:id="@+id/shop_ratingBar3"
+                            android:numStars="5"
+                            android:rating="4.0"
+                            android:layout_marginTop="10dp"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content">
+                        </RatingBar>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="简介：舞之初旗舰店，要跳舞要先看教学视频，我们为您提供高清好用大屏播放器，便宜又实惠，保证您喜欢"
+                            android:textSize="14dp"/>
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <com.allen.library.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

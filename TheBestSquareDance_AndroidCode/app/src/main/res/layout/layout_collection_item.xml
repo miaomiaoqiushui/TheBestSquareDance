@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_video_item_check"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_unselect1"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/collection_image"
+        android:layout_marginTop="10dp"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        />
+
+    <TextView
+        android:id="@+id/collection_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:text="视频名称：最爱跳舞"
+        android:textSize="16dp"/>
+
+</LinearLayout>

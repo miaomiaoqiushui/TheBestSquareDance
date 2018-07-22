@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_two"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_shop_serach_back"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.86"
+            android:background="@drawable/ic_search_back"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:singleLine="true"
+            android:textColor="@color/black2"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="0.25"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/shape_edit3"
+            android:hint="\tⓢ 试试搜：音响"
+            android:textSize="14dp"
+            android:textColorHint="@color/black3"
+            />
+        <TextView
+            android:id="@+id/search_goods_vodice_end"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="0.82"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/main_bg_color1"
+            android:textSize="18dp"
+            android:text="搜索"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:text="搜索发现"
+        android:textSize="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_voice_end"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:background="@color/colorActiveSmall"
+            android:text="智能音响"
+            android:textColor="@color/black2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:background="@color/colorActiveSmall"
+            android:textColor="@color/black2"
+            android:text="时尚舞裙"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:background="@color/colorActiveSmall"
+            android:layout_weight="0.5"
+            android:textColor="@color/black2"
+            android:text="运动舞鞋"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:background="@color/colorActiveSmall"
+            android:text="团购舞鞋"
+            android:textColor="@color/black2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:background="@color/colorActiveSmall"
+            android:textColor="@color/black2"
+            android:text="大声音音响"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:background="@color/colorActiveSmall"
+            android:layout_weight="0.5"
+            android:textColor="@color/black2"
+            android:text="舞具包包"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:background="@color/colorActiveSmall"
+            android:text="好看夏装"
+            android:textColor="@color/black2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:background="@color/colorActiveSmall"
+            android:textColor="@color/black2"
+            android:text="冬季必备"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:background="@color/colorActiveSmall"
+            android:layout_weight="0.5"
+            android:textColor="@color/black2"
+            android:text="青春范"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

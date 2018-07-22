@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_two"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:ellipsize="marquee"
+        android:background="@color/main_bg_color1"
+        android:gravity="center_horizontal|center"
+        android:text="视频聚合"
+        android:textColor="#ffffffff"
+        android:textSize="20dp" />
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/video_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:tabBackground="@color/main_bg_color1"
+        app:tabIndicatorColor="@color/white1"
+        app:tabTextColor="@color/black2"
+        app:tabSelectedTextColor="@color/white1"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_video"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/video_layout1"/>
+
+</RelativeLayout>

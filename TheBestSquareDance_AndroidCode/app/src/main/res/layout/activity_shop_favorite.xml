@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:fab="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray_two"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_shop_fav"
+                    android:layout_width="38dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_search_back"/>
+
+                <com.bigkoo.convenientbanner.ConvenientBanner
+                    android:id="@+id/convenientBanner_shop_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                    app:canLoop="true"/>
+
+
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/shop_goods_con_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="好未来"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black2"/>
+
+            <TextView
+                android:id="@+id/shop_goods_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="商品名称：秧歌服2018新款演出服\n\n商品价格：58元"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="15dp"
+                android:background="#b9b9b9"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="相似物品"
+                android:textColor="@color/black2"
+
+                android:textSize="18dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="252dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="#AA444444"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/id_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_add_shop_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        fab:menu_labels_style="@style/MenuLabelsStyle"
+        fab:menu_labels_showAnimation="@anim/jump_from_down"
+        fab:menu_labels_hideAnimation="@anim/jump_to_down"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_shadowColor="#444"
+        fab:menu_colorNormal="#41a5f6"
+        fab:menu_colorPressed="#338ad1"
+        fab:menu_colorRipple="#3F51B5">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_get_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_shop_get"
+            android:onClick="favorite_buy"
+            fab:fab_label="点击购买"
+            style="@style/MenuButtonsStyle" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_tel_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_shop_phone"
+            android:onClick="favorite_contact"
+            fab:fab_label="联系商家"
+            style="@style/MenuButtonsStyle" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</FrameLayout>

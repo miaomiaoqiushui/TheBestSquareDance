@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:background="@color/main_bg_color1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:id="@+id/btn_dancegroup_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_come_back3"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="申请舞群"
+            android:textSize="20sp"
+            android:textColor="@color/white1"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="舞群名称："
+            android:textColor="@color/black2"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:hint="请输入申请舞群名称"
+            android:textSize="16dp"
+            android:background="@null"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c9c7c7"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="所在地区："
+            android:textColor="@color/black2"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:hint="请点击选择"
+            android:background="@null"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c9c7c7"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="详细地址："
+            android:textColor="@color/black2"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="街道、小区名称等"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:background="@null"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c9c7c7"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="负责人姓名："
+            android:textColor="@color/black2"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:hint="请输入姓名"
+            android:background="@null"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c9c7c7"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="负责人电话："
+            android:textColor="@color/black2"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:hint="请输入电话"
+            android:background="@null"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c9c7c7"/>
+
+    <Button
+        android:id="@+id/dance_apply_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/exit_btn_blue"
+        android:text="申请"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+
+
+</LinearLayout>
