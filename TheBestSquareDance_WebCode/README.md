@@ -1,7 +1,3 @@
-
-
-# 用Flask+MySQL实现用户登陆注册，以及对数据库进行增删查改
-
 ## 参考资料
 1.[Build a CRUD Web App With Python and Flask - Part One](https://scotch.io/tutorials/build-a-crud-web-app-with-python-and-flask-part-one)
 
