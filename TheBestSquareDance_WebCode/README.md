@@ -1,11 +1,13 @@
 
 
-#用Flask+MySQL实现用户登陆注册，以及对数据库进行增删查改
-##参考资料
+# 用Flask+MySQL实现用户登陆注册，以及对数据库进行增删查改
+
+## 参考资料
 1.[Build a CRUD Web App With Python and Flask - Part One](https://scotch.io/tutorials/build-a-crud-web-app-with-python-and-flask-part-one)
 
 2.[Build a CRUD Web App With Python and Flask - Part Two](https://scotch.io/tutorials/build-a-crud-web-app-with-python-and-flask-part-two)
-##启动方式
+
+## 启动方式
 如果是Linux/Mac系统，打开bash按如下操作
 ```
 $export FLASK_CONFIG=development
@@ -23,7 +25,8 @@ $ flask run
  * Serving Flask app "run"
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
-##创建数据库
+
+## 创建数据库
 查看项目目录instance中config.py文件
 ```
 # instance/config.py
@@ -44,7 +47,8 @@ SQLALCHEMY_DATABASE_URI = 'mysql://root:root@localhost/book'
 ```
 >flask db upgrade
 ```
-##添加管理员账户
+
+## 添加管理员账户
 进入上面的cmd窗口，输入如下命令：
 ```
 >flask shell
