@@ -1,0 +1,30 @@
+<!-- app/templates/admin/departments/department.html -->
+
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "base.html" %}
+{% block title %}
+    {% if add_video %}
+        添加视频信息
+    {% else %}
+        修改视频信息
+    {% endif %}
+{% endblock %}
+{% block body %}
+<div class="content-section">
+ <div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <div class="center">
+            {% if add_video %}
+                <h1>添加视频信息</h1>
+            {% else %}
+                <h1>修改视频信息</h1>
+            {% endif %}
+            <br/>
+            {{ wtf.quick_form(form) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

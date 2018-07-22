@@ -1,0 +1,71 @@
+{% import "bootstrap/utils.html" as utils %}
+{% extends "base.html" %}
+{% block title %}舞群信息{% endblock %}
+{% block body %}
+<div class="content-section">
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <br/>
+        {{ utils.flashed_messages() }}
+        <br/>
+        <h1 style="text-align:center;">舞群信息</h1>
+        {% if dancegroups %}
+          <hr class="intro-divider">
+          <div class="center">
+            <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th width="10%"> 舞群名称 </th>
+                  <th width="10%"> 所在地区 </th>
+                  <th width="10%"> 详细地址 </th>
+                    <th width="10%"> 负责人姓名 </th>
+                    <th width="10%"> 负责人电话 </th>
+                    <th width="15%"> 所在地经度 </th>
+                    <th width="15%"> 所在地纬度 </th>
+                  <th width="10%"> 修改 </th>
+                  <th width="10%"> 删除 </th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for dancegroup in dancegroups %}
+                <tr>
+                  <td> {{ dancegroup['dance_name'] }} </td>
+                  <td> {{ dancegroup['dance_region'] }} </td>
+                    <td> {{ dancegroup['detailed_address'] }} </td>
+                  <td> {{ dancegroup['charge_name'] }} </td>
+                   <td> {{ dancegroup['charge_tel'] }} </td>
+                  <td> {{ dancegroup['longitude'] }} </td>
+                  <td>{{ dancegroup['latitude'] }}</td>
+                  <td>
+                    <a href="{{ url_for('admin.edit_dancegroup', name=dancegroup['dance_name']) }}">
+                      <i class="fa fa-pencil"></i> 修改
+                    </a>
+                  </td>
+                  <td>
+                      <a href="{{ url_for('admin.delete_dancegroup', name=dancegroup['dance_name']) }}">
+                      <i class="fa fa-trash"></i> 删除
+                    </a>
+                  </td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <div style="text-align: center">
+        {% else %}
+          <div style="text-align: center">
+            <h3> 还未添加任何舞群信息 </h3>
+            <hr class="intro-divider">
+        {% endif %}
+          <a href="{{ url_for('admin.add_dancegroup') }}" class="btn btn-default btn-lg">
+            <i class="fa fa-plus"></i>
+            添加舞群信息
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}

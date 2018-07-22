@@ -1,0 +1,73 @@
+{% import "bootstrap/utils.html" as utils %}
+{% extends "base.html" %}
+{% block title %}用户信息{% endblock %}
+{% block body %}
+<div class="content-section">
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <br/>
+        {{ utils.flashed_messages() }}
+        <br/>
+        <h1 style="text-align:center;">用户信息</h1>
+        {% if userinfos %}
+          <hr class="intro-divider">
+          <div class="center">
+            <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th width="10%"> 用户名 </th>
+                  <th width="10%"> 密码 </th>
+                  <th width="10%"> 昵称 </th>
+                    <th width="10%"> 手机号 </th>
+                    <th width="10%"> 头像 </th>
+                    <th width="10%"> 性别 </th>
+                    <th width="10%"> 地区 </th>
+                    <th width="10%"> 个性签名 </th>
+                  <th width="10%"> 修改 </th>
+                  <th width="10%"> 删除 </th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for userinfo in userinfos %}
+                <tr>
+                  <td> {{ userinfo['name'] }} </td>
+                  <td> {{ userinfo['passward'] }} </td>
+                    <td> {{ userinfo['nickname'] }} </td>
+                  <td> {{ userinfo['tel'] }} </td>
+                   <td> {{ userinfo['head_picture'] }} </td>
+                  <td> {{ userinfo['gender'] }} </td>
+                    <td> {{ userinfo['region'] }} </td>
+                  <td> {{ userinfo['signature'] }} </td>
+                  <td>
+                    <a href="{{ url_for('admin.edit_userinfo', name=userinfo['name']) }}">
+                      <i class="fa fa-pencil"></i> 修改
+                    </a>
+                  </td>
+                  <td>
+                    <a href="{{ url_for('admin.delete_userinfo', name=userinfo['name']) }}">
+                      <i class="fa fa-trash"></i> 删除
+                    </a>
+                  </td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <div style="text-align: center">
+        {% else %}
+          <div style="text-align: center">
+            <h3> 还未添加任何用户信息 </h3>
+            <hr class="intro-divider">
+        {% endif %}
+          <a href="{{ url_for('admin.add_userinfo') }}" class="btn btn-default btn-lg">
+            <i class="fa fa-plus"></i>
+            添加用户信息
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
